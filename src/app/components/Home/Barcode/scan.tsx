@@ -63,6 +63,23 @@ function PageContent() {
           <strong>Izin PJK3:</strong> Nomor 5/486/AS.01.02/V/2024
         </div>
       </div>
+      <div style={{ textAlign: "center", marginTop: 20 }}>
+        <a
+          href="/pjk3.pdf" // Path to the PDF in the public folder
+          download="pjk3.pdf" // Optional: Specify the name for the downloaded file
+          style={{
+            padding: "10px 20px",
+            backgroundColor: "#4CAF50",
+            color: "#fff",
+            border: "none",
+            borderRadius: 5,
+            textDecoration: "none",
+            cursor: "pointer",
+          }}
+        >
+          Download PDF
+        </a>
+      </div>
     </div>
   );
 }

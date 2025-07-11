@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Global Exam Certification for International (GECI)",
+  title: "Jeap Karya Asih",
 };
 
 export default function Home() {
