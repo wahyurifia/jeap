@@ -48,7 +48,7 @@ const AboutUs = () => {
             <p className="text-lg text-bluegray pt-4 font-normal text-center lg:text-start">
               We combine creativity, strategy, and security to deliver
               end-to-end digital solutions that help brands grow faster and
-              smarter.
+              smarter.s
             </p>
 
             <div className="mt-10">
