@@ -44,9 +44,8 @@ function PageContent() {
 
   return (
     <div style={{ padding: 40, maxWidth: 600, margin: "auto" }}>
-      <h1 style={{ textAlign: "center", marginBottom: 20 }}>
-        Sertifikat No: JEAP/QHSE/001/VII/2025
-      </h1>
+      <h1 style={{ textAlign: "center", marginBottom: 20 }}>Sertifikat</h1>
+      <h5>No: JEAP/QHSE/001/VII/2025</h5>
       <div style={{ border: "1px solid #ddd", padding: 20, borderRadius: 8 }}>
         <div style={{ marginBottom: 15 }}>
           <strong>Name:</strong> {data.username}
