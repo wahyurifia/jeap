@@ -43,39 +43,35 @@ function PageContent() {
   if (isLoading) return <p>Loading...</p>;
 
   return (
-    <div style={{ padding: 40, maxWidth: 600, margin: "auto" }}>
-      <h1 style={{ textAlign: "center", marginBottom: 20 }}>Sertifikat</h1>
-      <h5>No: JEAP/QHSE/001/VII/2025</h5>
-      <div style={{ border: "1px solid #ddd", padding: 20, borderRadius: 8 }}>
-        <div style={{ marginBottom: 15 }}>
+    <div className="p-8 max-w-2xl mx-auto bg-gray-100 rounded-xl shadow-lg">
+      <div className="text-center mb-8">
+        <h1 className="text-4xl font-bold text-gray-800 mb-4">Sertifikat</h1>
+        <h5 className="text-lg text-gray-600">No: JEAP/QHSE/001/VII/2025</h5>
+      </div>
+
+      <div className="bg-white p-6 rounded-xl shadow-md">
+        <div className="mb-4 text-xl font-semibold text-gray-700">
           <strong>Name:</strong> {data.username}
         </div>
-        <div style={{ marginBottom: 15 }}>
+        <div className="mb-4 text-xl font-semibold text-gray-700">
           <strong>Course:</strong> {data.scope}
         </div>
-        <div style={{ marginBottom: 15 }}>
+        <div className="mb-4 text-xl font-semibold text-gray-700">
           <strong>Date:</strong> {data.date}
         </div>
-        <div style={{ marginBottom: 15 }}>
+        <div className="mb-4 text-xl font-semibold text-gray-700">
           <strong>Direktur:</strong> {data.label}
         </div>
-        <div style={{ marginBottom: 15 }}>
+        <div className="mb-4 text-xl font-semibold text-gray-700">
           <strong>Izin PJK3:</strong> Nomor 5/486/AS.01.02/V/2024
         </div>
       </div>
-      <div style={{ textAlign: "center", marginTop: 20 }}>
+
+      <div className="text-center mt-8">
         <a
-          href="/pjk3.pdf" // Path to the PDF in the public folder
-          download="pjk3.pdf" // Optional: Specify the name for the downloaded file
-          style={{
-            padding: "10px 20px",
-            backgroundColor: "#4CAF50",
-            color: "#fff",
-            border: "none",
-            borderRadius: 5,
-            textDecoration: "none",
-            cursor: "pointer",
-          }}
+          href="/pjk3.pdf"
+          download="pjk3.pdf"
+          className="px-6 py-3 bg-green-500 text-black text-lg font-semibold rounded-lg shadow-md hover:bg-green-600 transition duration-300"
         >
           Download Izin PJK3
         </a>
