@@ -1,6 +1,5 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import ScrollToTop from "@/app/components/ScrollToTop";
 
 const font = Poppins({
   subsets: ["latin"],
@@ -14,10 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${font.className}`}>
-        {children}
-        <ScrollToTop />
-      </body>
+      <body className={`${font.className}`}>{children}</body>
     </html>
   );
 }

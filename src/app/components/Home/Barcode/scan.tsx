@@ -59,6 +59,9 @@ function PageContent() {
         <div style={{ marginBottom: 15 }}>
           <strong>Direktur:</strong> {data.label}
         </div>
+        <div style={{ marginBottom: 15 }}>
+          <strong>Izin PJK3:</strong> Nomor 5/486/AS.01.02/V/2024
+        </div>
       </div>
     </div>
   );
