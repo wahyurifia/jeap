@@ -18,6 +18,8 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <Barcode />
+
       <Company />
       <Records />
       <Service />
@@ -26,7 +28,6 @@ export default function Home() {
       <Review />
       <ContactForm />
       <Newsletter />
-      <Barcode />
     </main>
   );
 }
