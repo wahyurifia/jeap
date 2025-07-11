@@ -11,7 +11,7 @@ export default function QRCodePage() {
   };
 
   const query = new URLSearchParams(data).toString();
-  const fullUrl = `http://localhost:3000/verifikasi?${query}`;
+  const fullUrl = `https://jeapkaryaasih.vercel.app/verifikasi?${query}`;
 
   return (
     <div style={{ padding: "40px", textAlign: "center" }}>
