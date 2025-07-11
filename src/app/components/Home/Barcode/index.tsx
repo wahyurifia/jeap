@@ -5,9 +5,11 @@ import { QRCodeCanvas } from "qrcode.react";
 
 export default function QRCodePage() {
   const data = {
-    username: "john",
-    email: "john@email.com",
-    date: "2025-07-11",
+    username: "Ari Sugara",
+
+    scope: "Work Permit System",
+    date: "15 Desember 2024",
+    label: "Jefri Imron S.T, M.T, MQM, CSSGB",
   };
 
   const query = new URLSearchParams(data).toString();
