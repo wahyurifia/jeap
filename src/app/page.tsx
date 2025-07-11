@@ -8,6 +8,7 @@ import Network from "./components/Home/Network";
 import Review from "./components/Home/Review";
 import ContactForm from "./components/Contact/Form";
 import Newsletter from "./components/Home/Newsletter/Newsletter";
+import Barcode from "./components/Home/Barcode/index";
 
 export const metadata: Metadata = {
   title: "Global Exam Certification for International (GECI)",
@@ -25,6 +26,7 @@ export default function Home() {
       <Review />
       <ContactForm />
       <Newsletter />
+      <Barcode />
     </main>
   );
 }
