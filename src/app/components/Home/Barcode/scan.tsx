@@ -59,20 +59,6 @@ function PageContent() {
         <div style={{ marginBottom: 15 }}>
           <strong>Direktur:</strong> {data.label}
         </div>
-        <div style={{ textAlign: "center", marginTop: 20 }}>
-          <button
-            style={{
-              padding: "10px 20px",
-              backgroundColor: "#f44336",
-              color: "#fff",
-              border: "none",
-              borderRadius: 5,
-              cursor: "pointer",
-            }}
-          >
-            Download
-          </button>
-        </div>
       </div>
     </div>
   );
