@@ -77,7 +77,7 @@ function PageContent() {
             cursor: "pointer",
           }}
         >
-          Download PDF
+          Download Izin PJK3
         </a>
       </div>
     </div>
