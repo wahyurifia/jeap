@@ -1,9 +1,19 @@
 "use client"; // Ensure this is a client-side component in App Router
 
+import { Suspense } from "react"; // Import Suspense from React
 import { useSearchParams } from "next/navigation"; // App Router method to get query params
 import { useEffect, useState } from "react";
 
 export default function ScanPage() {
+  return (
+    // Wrap the component with Suspense
+    <Suspense fallback={<p>Loading...</p>}>
+      <PageContent />
+    </Suspense>
+  );
+}
+
+function PageContent() {
   const searchParams = useSearchParams();
 
   const [data, setData] = useState({
