@@ -16,6 +16,7 @@ export default function ScanPage() {
 function VerifiedCertificate() {
   const searchParams = useSearchParams();
   const [data, setData] = useState({
+    no: "",
     username: "",
     scope: "",
     date: "",
@@ -26,13 +27,14 @@ function VerifiedCertificate() {
 
   useEffect(() => {
     if (searchParams) {
+      const no = searchParams.get("no");
       const username = searchParams.get("username");
       const scope = searchParams.get("scope");
       const date = searchParams.get("date");
       const label = searchParams.get("label");
 
-      if (username && scope && date && label) {
-        setData({ username, scope, date, label });
+      if (no && username && scope && date && label) {
+        setData({ no, username, scope, date, label });
         setIsLoading(false);
       }
     }
@@ -60,6 +62,7 @@ function VerifiedCertificate() {
         height={300}
         style={{ width: 100, marginBottom: 10 }}
       />
+
       <h2 style={{ color: "#2e7d32", marginBottom: 10 }}>Terverifikasi</h2>
 
       <p style={{ fontSize: 16, marginBottom: 8 }}>
@@ -87,9 +90,10 @@ function VerifiedCertificate() {
         🗓️ Tanggal Pelatihan: <strong>{data.date}</strong>
       </p>
 
-      <p style={{ marginBottom: 32, fontSize: 14 }}>
+      <p style={{ marginBottom: 2, fontSize: 14 }}>
         🖋️ Ditandatangani oleh: <strong>{data.label}</strong>
       </p>
+      <p style={{ marginBottom: 32, fontSize: 14 }}>{data.no}</p>
 
       <a
         href="/pjk3.pdf"
