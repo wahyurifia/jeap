@@ -57,6 +57,7 @@ function VerificationCard() {
       <div>
         {/* Header */}
         <header
+          className="header-title"
           style={{
             display: "flex",
             justifyContent: "space-between",
@@ -110,15 +111,7 @@ function VerificationCard() {
         </header>
 
         {/* Category Grid */}
-        <div
-          className="category-grid"
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(2, 1fr)",
-            gap: "20px",
-            marginBottom: "40px",
-          }}
-        >
+        <div className="category-grid">
           {found.category.map((cat, catIndex) => {
             const isLast = catIndex === found.category.length - 1;
             const isOdd = found.category.length % 2 !== 0;
@@ -217,7 +210,7 @@ function VerificationCard() {
               alt="Tanda Tangan"
               width={440}
               height={70}
-              style={{ objectFit: "contain", marginBottom: "5px" }}
+              style={{ objectFit: "contain", margin: "5px auto" }}
             />
           </div>
 
@@ -235,13 +228,7 @@ function VerificationCard() {
           </div>
           <div style={{ fontSize: "13px", color: "#777" }}>Direktur Utama</div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "flex-end",
-            marginBottom: "20px",
-          }}
-        >
+        <div className="download-section">
           <a
             href="/pjk3.pdf"
             download="izin-pjk3.pdf"
@@ -252,6 +239,7 @@ function VerificationCard() {
               borderRadius: 6,
               textDecoration: "none",
               fontSize: 14,
+              textAlign: "center",
             }}
           >
             📄 Download Izin PJK3
