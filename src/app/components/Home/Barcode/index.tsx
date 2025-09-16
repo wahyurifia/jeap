@@ -104,13 +104,21 @@ const dummyData = [
   },
 ];
 
+const data = [
+  "Safety & Energy Control Fundamentals",
+  "Technical Basic for Field Staff",
+  "Emergency Response & Safety Foundation",
+];
+
+// https://jeapkaryaasih.vercel.app/verifikasi?no=No%3A+JEAP%2FQHSE%2F001%2FVII%2F2025&username=Ari+Sugara&scope=Work+Permit+System&date=15+Desember+2024&label=Jefri+Imron+S.T%2C+M.T%2C+MQM%2C+CSSGB
+
 const BASE_URL = "https://jeapkaryaasih.vercel.app/verifikasi";
+const BASE_SCAN_URL = "https://jeapkaryaasih.vercel.app/scan";
 
 export default function QRCodePage() {
   return (
     <div style={{ padding: "40px", textAlign: "center" }}>
-      <h2>Daftar QR Code Verifikasi</h2>
-
+      {/* <h2>Daftar QR Code Verifikasi</h2> */}
       {dummyData.map((item, index) => {
         const query = new URLSearchParams(item).toString();
         const fullUrl = `${BASE_URL}?${query}`;
@@ -120,6 +128,19 @@ export default function QRCodePage() {
             <h4>{item.username}</h4>
             <p>{fullUrl}</p>
             <QRCodeCanvas value={fullUrl} size={256} />
+          </div>
+        );
+      })}
+
+      {data.map((item, i) => {
+        const query = new URLSearchParams({ title: item }).toString();
+        const fullUrl = `${BASE_SCAN_URL}?${query}`;
+
+        return (
+          <div key={i} style={{ marginBottom: "40px" }}>
+            <h2>{item}</h2>
+            <QRCodeCanvas value={fullUrl} size={200} />
+            <p>{fullUrl}</p>
           </div>
         );
       })}
