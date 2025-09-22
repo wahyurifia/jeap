@@ -398,6 +398,16 @@ const dataPelatihan: DataPelatihanType[] = [
             noSurat: "No : 32/AWS/HWPS/JKA/IX/2025",
             nama: "Panuwat Dawsuk",
           },
+          {
+            no: 33,
+            noSurat: "No : 33/AWS/HWPS/JKA/IX/2025",
+            nama: "Swapan",
+          },
+          {
+            no: 34,
+            noSurat: "No : 34/AWS/HWPS/JKA/IX/2025",
+            nama: "Nazrul Islam Mizi",
+          },
         ],
       },
       {
@@ -539,6 +549,16 @@ const dataPelatihan: DataPelatihanType[] = [
             noSurat: "No : 32/AWS/LTT/JKA/IX/2025",
             nama: "Panuwat Dawsuk",
           },
+          {
+            no: 33,
+            noSurat: "No : 33/AWS/LTT/JKA/IX/2025",
+            nama: "Swapan",
+          },
+          {
+            no: 34,
+            noSurat: "No : 34/AWS/LTT/JKA/IX/2025",
+            nama: "Nazrul Islam Mizi",
+          },
         ],
       },
       {
@@ -679,6 +699,16 @@ const dataPelatihan: DataPelatihanType[] = [
             no: 32,
             noSurat: "No : 32/AWS/WAH/JKA/IX/2025",
             nama: "Panuwat Dawsuk",
+          },
+          {
+            no: 33,
+            noSurat: "No : 33/AWS/WAH/JKA/IX/2025",
+            nama: "Swapan",
+          },
+          {
+            no: 34,
+            noSurat: "No : 34/AWS/WAH/JKA/IX/2025",
+            nama: "Nazrul Islam Mizi",
           },
         ],
       },
@@ -1073,6 +1103,16 @@ const dataPelatihan: DataPelatihanType[] = [
             noSurat: "No : 66/AWS/FFR/JKA/IX/2025",
             nama: "Ruengdanai Boonjong",
           },
+          {
+            no: 67,
+            noSurat: "No : 67/AWS/FFR/JKA/IX/2025",
+            nama: "Swapan",
+          },
+          {
+            no: 68,
+            noSurat: "No : 68/AWS/FFR/JKA/IX/2025",
+            nama: "Nazrul Islam Mizi",
+          },
         ],
       },
       {
@@ -1368,6 +1408,16 @@ const dataPelatihan: DataPelatihanType[] = [
             noSurat: "No : 66/AWS/FAC/JKA/IX/2025",
             nama: "Ruengdanai Boonjong",
           },
+          {
+            no: 67,
+            noSurat: "No : 67/AWS/FAC/JKA/IX/2025",
+            nama: "Swapan",
+          },
+          {
+            no: 68,
+            noSurat: "No : 68/AWS/FAC/JKA/IX/2025",
+            nama: "Nazrul Islam Mizi",
+          },
         ],
       },
       {
@@ -1662,6 +1712,16 @@ const dataPelatihan: DataPelatihanType[] = [
             no: 66,
             noSurat: "No : 66/AWS/OSH/JKA/IX/2025",
             nama: "Ruengdanai Boonjong",
+          },
+          {
+            no: 67,
+            noSurat: "No : 67/AWS/OSH/JKA/IX/2025",
+            nama: "Swapan",
+          },
+          {
+            no: 68,
+            noSurat: "No : 68/AWS/OSH/JKA/IX/2025",
+            nama: "Nazrul Islam Mizi",
           },
         ],
       },
